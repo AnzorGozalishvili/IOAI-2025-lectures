@@ -1,0 +1,9 @@
+torch>=2.2.0
+pytorch-lightning>=2.2.0
+numpy<2.0.0 # 2.x has issues with torch
+jupyter==1.1.1
+tensorboard==2.19.0
+matplotlib==3.10.1
+seaborn==0.13.2
+torchviz-0.0.3
+scikit-learn==1.6.1
