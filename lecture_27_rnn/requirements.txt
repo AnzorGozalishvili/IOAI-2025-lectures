@@ -5,5 +5,5 @@ jupyter==1.1.1
 tensorboard==2.19.0
 matplotlib==3.10.1
 seaborn==0.13.2
-torchviz-0.0.3
+torchviz==0.0.3
 scikit-learn==1.6.1

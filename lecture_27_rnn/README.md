@@ -1,6 +1,4 @@
-# IOAI-2025-lectures
-
-## Environment Setup
+## Python Virtual Environment Setup
 
 To set up the development environment for this project, follow these steps:
 
