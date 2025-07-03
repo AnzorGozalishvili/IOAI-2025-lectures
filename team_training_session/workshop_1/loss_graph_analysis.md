@@ -188,3 +188,24 @@ Train loss improves, val loss flat or rises.
 - Early stopping  
 - Increase validation size  
 - Improve validation diversity
+
+---
+
+## ⏳ Early Stopping and Best Checkpoint Selection
+
+**Symptoms:**  
+Model starts to overfit after several epochs — training loss continues to decrease, but validation loss increases.
+
+**Causes:**  
+- Prolonged training leads to memorization of training data  
+- Lack of regularization  
+- Natural overfitting curve of the model
+
+**Fixes:**  
+- Enable early stopping based on validation loss or accuracy  
+- Always save model checkpoints after each epoch  
+- If only one training run is allowed, make sure to:
+  - Track validation metric at every epoch  
+  - Save the model state for each epoch  
+  - After training, select the epoch with the **best validation performance** as your final model  
+- Avoid using the final epoch model unless it's also the best on validation
